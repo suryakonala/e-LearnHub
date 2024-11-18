@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - LearnHub</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #000000;
+            background-image: url(https://img.freepik.com/premium-vector/gradient-blur-green-abstract-background_662491-72.jpg);
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?education') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .submit-button{
+            background-color: rgb(9, 248, 57);
+            align-content: center;
+            width: 100%;
+        }
+        .message-card{
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="https://www.hurdle.support/wp-content/uploads/2020/12/Learning-Hub-Logo.png" alt="Sample Image" height="70px" width="80px">
+        <a class="navbar-brand" href="#"><b>e-LearnHub</b></a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Website.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="acc.html">Create Account</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Login to Your Account</h1>
+    </div>
+
+    <div class="container mt-5">
+        <div class="form-card">
+            <h2 class="text-center">Welcome Back , You can Login Here ! </h2>
+            <form action="home.html" method="POST">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                </div>
+                <div class="message-card">
+                    <a href="Website.html" class="btn btn-success">Login</a></div>
+            </form>
+            <p class="mt-3 text-center">Don't have an account? <a href="create-account.html">Sign up here</a>.</p>
+            <p class="text-center"><a href="#">Forgot Password?</a></p>
+        </div>
+    </div>
+
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 e-LearnHub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

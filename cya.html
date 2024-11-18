@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Learning Platform</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        header .logo h1 {
+            margin-left: 20px;
+            font-size: 24px;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            float: right;
+            margin-right: 20px;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #3498db;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .hero .hero-content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero .hero-content p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .hero .btn {
+            background-color: #fff;
+            color: #3498db;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .hero .btn:hover {
+            background-color: #2980b9;
+            color: #fff;
+        }
+
+        /* Course Categories Section */
+        .categories {
+            background-color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .categories h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .category-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .category {
+            width: 22%;
+            background-color: #ecf0f1;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        .category h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .category p {
+            font-size: 16px;
+        }
+
+        /* Featured Courses Section */
+        .courses {
+            background-color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .courses h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .course-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .course {
+            background-color: #ecf0f1;
+            width: 30%;
+            margin: 15px 0;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .course img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .course h3 {
+            font-size: 24px;
+            margin-top: 15px;
+        }
+
+        .course p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .course .btn {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .course .btn:hover {
+            background-color: #2980b9;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+        nav ul{
+            list-style-type: none;
+            display: flex;
+            height: 3%;
+            justify-content: flex end;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="https://www.hurdle.support/wp-content/uploads/2020/12/Learning-Hub-Logo.png" alt="Sample Image" height="70px" width="80px"><h3 style="display: flex;">e-LearnHub</h3>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Unlock Your Potential with Our Courses</h2>
+            <p>Explore a wide range of courses to take your skills to the next level.</p>
+            <a href="#courses" class="btn">Browse Courses</a>
+        </div>
+    </section>
+
+    <!-- Course Categories Section -->
+    <section id="categories" class="categories">
+        <h2>Popular Categories</h2>
+        <div class="category-list">
+            <div class="category">
+                <h3>Web Development</h3>
+                <p>Learn how to build websites and applications.</p>
+            </div>
+            <div class="category">
+                <h3>Data Science</h3>
+                <p>Explore data analysis, machine learning, and AI.</p>
+            </div>
+            <div class="category">
+                <h3>Graphic Design</h3>
+                <p>Design stunning visuals with modern tools.</p>
+            </div>
+            <div class="category">
+                <h3>Marketing</h3>
+                <p>Master digital marketing strategies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Courses Section -->
+    <section id="courses" class="courses">
+        <h2>Featured Courses</h2>
+        <div class="course-list">
+            <div class="course">
+                <img src="https://via.placeholder.com/200x150" alt="Course Image">
+                <h3>Introduction to Web Development</h3>
+                <p>Start building websites with HTML, CSS, and JavaScript.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="course">
+                <img src="https://via.placeholder.com/200x150" alt="Course Image">
+                <h3>Data Science with Python</h3>
+                <p>Learn Python and explore data analysis techniques.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="course">
+                <img src="https://via.placeholder.com/200x150" alt="Course Image">
+                <h3>Master Photoshop for Design</h3>
+                <p>Learn graphic design using Adobe Photoshop.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 LearnHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

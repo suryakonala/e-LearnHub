@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Learning Platform</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #1982eb;
+            color: black;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url(https://thephagroup.com/wp-content/uploads/2019/12/AdobeStock_271791778.jpeg) no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        .hero {
+            
+            background-size: cover;
+            height: 400px;
+            color: rgb(253, 251, 251);
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+            text-align: center;
+        }
+        .course-card {
+            margin-bottom: 20px;
+            text-decoration-color: black;
+            background-color: black;
+        }
+        .course-card{
+            text-decoration-color: black;
+        }
+        .submit-button{
+            background-color: green;
+            color: white; 
+            padding: 10px 20px;
+            border: none; 
+            border-radius: 5px;
+            cursor: pointer;        
+            font-size: 16px;
+            width: 100%;        
+        }
+        nav ul{
+            list-style-type: none;
+            display: flex;
+            height: 3%;
+            justify-content: flex end;
+        }
+        nav ul li:hover{
+            background-color: rgb(0, 98, 255);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="https://www.hurdle.support/wp-content/uploads/2020/12/Learning-Hub-Logo.png" alt="Sample Image" height="70px" width="80px">
+    <a class="navbar-brand" href="#"><b>e-LearnHub</b></a>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="list.html">Courses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="acc.html">Sign Up</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="about.html">About Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <div class="hero">
+        <h1>Welcome to e-LearnHub  !</h1><br>
+        
+    </div>
+
+    <div class="container mt-5" id="courses">
+        <h2 class="text-center">Featured Courses</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card course-card">
+                    <img src="https://image.freepik.com/free-vector/gradient-coding-developers-logo_23-2148809440.jpg" class="card-img-top" alt="Coding">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development</h5>
+                        <p class="card-text">Learn the basics of web development, HTML, CSS, and JavaScript.</p>
+                        <a href="enroll.html" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card course-card">
+                    <img src="https://th.bing.com/th/id/OIP.ak-aLhlwPrWAnma0pvOImQHaF7?rs=1&pid=ImgDetMain" class="card-img-top" alt="Design">
+                    <div class="card-body">
+                        <h5 class="card-title">Graphic Design</h5>
+                        <p class="card-text">Master design principles and tools to create stunning visuals.</p>
+                        <a href="enroll2.html" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card course-card">
+                    <img src="https://thedesignlove.com/wp-content/uploads/2021/01/Data-science-logo-21.jpg" class="card-img-top" alt="Data Science">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Science</h5>
+                        <p class="card-text">Dive into data analysis, machine learning, and AI.</p>
+                        <a href="enroll3.html" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5" id="signup">
+        <h2 class="text-center">Sign Up for Free</h2>
+        <form action="acc.html" method="get">
+        <input type="submit" class="submit-button" value="Create Your Account">
+        </form> 
+    </div>
+
+    <div class="container mt-5" id="about">
+        <h2 class="text-center">About Us</h2>
+        <p class="text-center">At e-LearnHub, we believe in accessible education for everyone. Join us to explore new skills and knowledge.</p>
+    </div>
+
+    <footer class="text-center mt-4">
+        <p>&copy; 2024 e-LearnHub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

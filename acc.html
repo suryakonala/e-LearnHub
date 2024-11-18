@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - LearnHub</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            background-image: url(https://elementor.com/blog/wp-content/uploads/2021/09/15.08.2021_GRADIENTS-IN-WEB-DESIGN-TRENDS-_-EXAMPLES_BLOG-07.png);
+            color: #000000;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?education') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .submit-button{
+            background-color: rgb(0, 255, 38);
+            align-content: center;
+            width: 95%;
+        }
+        .message-card{
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="https://www.hurdle.support/wp-content/uploads/2020/12/Learning-Hub-Logo.png" alt="Sample Image" height="70px" width="80px">
+        <a class="navbar-brand" href="#"><b>e-LearnHub</b></a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Create Your Account</h1>
+    </div>
+
+    <div class="container mt-5">
+        <div class="form-card">
+            <h2 class="text-center">Sign Up</h2>
+            <form>
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" class="form-control" id="fullname" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Create a password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirm-password" placeholder="Confirm your password" required>
+                </div>
+                <div class="message-card">
+                    <a href="acc success.html" class="btn btn-success">Create Your Account</a>
+                </div>
+            </form>
+            <p class="mt-3 text-center">Already have an account? <a href="login.html">Log in here</a>.</p>
+        </div>
+    </div>
+
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 e-LearnHub. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
